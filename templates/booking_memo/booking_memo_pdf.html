@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>GDM</title>
+
+        <style>
+            table{width:100%;height: 100%;
+                border: 1px solid black;border-collapse: collapse;}
+                th,td{border:1px solid black; padding:3px 5px;font-size: 13px;
+                }
+                .table1
+                {
+                   th,td{
+                    border: none;
+                     }
+                }
+                .sub-table1
+                {
+                     border: none;
+
+                }
+                .table2
+                {
+                    th{
+                        text-align: center;
+                    }
+                }
+                .table3
+                 {
+                    th,td{
+                        border:none;
+                        text-align: center;
+                        } 
+                 } 
+            .main-heading
+            {
+               font-family:'Times New Roman';
+               color: red;
+               font-weight: bold;
+               text-transform: uppercase;    
+               font-size: 35px;
+               position:relative;
+               bottom:90px;
+               text-align:center;
+            }
+           .heading
+           {
+               position:relative;
+               text-align: center;
+               bottom:130px;
+           }
+            .header {
+               text-align: center;
+             }
+             .header img {
+               width: 170px;
+               height:150px;
+               float: left;
+               right: 30px;
+               position: relative;
+               bottom:140px;
+             }
+             .info
+             {
+              position: relative;
+              bottom:120px;
+              right:70px;
+             }
+   
+              .barcode {
+                position: relative;
+                right: -560px;
+                width: 200px;
+                height: 50px;
+                top:105px;
+             }
+          .barcode img {
+            width: 100%;
+            height: 35px;
+          }
+          .barcode h3 {
+            display: none;
+          }
+          .address{
+            font-size:13px;
+            white-space: normal; 
+            word-wrap: break-word;
+            width:620px;
+            position: relative;
+            left: 50px;
+          }
+          .main-t{
+            position: relative;
+            bottom: 135px;
+          }
+               
+        </style>
+    </head>
+
+    <body>
+        <div class='barcode'>
+            <img
+              src='data:image/png;base64,{{ barcode_base64 }}'
+              alt='Trip Memo No Barcode'
+            />
+          </div>
+          <h3 class='main-heading'>{{ company.company_name }}</h3>
+          <div class='header'>
+            <img src='{{ MEDIA_URL }}{{ company.company_logo }}' alt='Company Logo' /> 
+
+            <div class='info'>
+                <p class='address'>{{ company.address }}</p>
+                <p style='position:relative;bottom:10px;right:25px;font-size:13px;'>
+                    EMAIL: <b style='font-weight:normal;font-size:14px;'>{{ company.email_id }}&nbsp;&nbsp;MOB:{{ company.contact_number }}</b>
+                </p>
+            </div>
+
+          </div>
+
+         <h3 class='heading'>GOODS DISPATCH MEMO</h3>
+
+     <div class='main-t'>
+         <table  class='table1'>
+            <tbody>
+                <tr>
+                    <th>Branch</th>
+                    <td>{{ booking_memo.branch_name }}</td>
+                    <th>Memo No</th>
+                    <th>{{ booking_memo.memo_no }}</th>
+                    <th>Memo Date</th>
+                    <td>{{ booking_memo.date|date:'d/m/Y' }}</td>
+                </tr>
+                <tr>
+                    <th>Coll Area</th>
+                    <td>{{ booking_memo.to_branch }}</td>
+                    <th>Vehicale No</th>
+                    <td>{{ booking_memo.vehical_no }}</td>
+                    <th>Vehicle Type</th>
+                    <td>{{ booking_memo.vehical_type }}</td>
+                </tr>
+                <tr>
+                    <th>Driver Name</th>
+                    <td>{{ booking_memo.driver_name }}</td>
+                    <th>Kilometer</th>
+                    <th>{{ booking_memo.km|floatformat:0  }}KM</th>
+                    <th>Trip No</th>
+                    <th>{{ booking_memo.trip_no }}</th>
+                </tr>
+                <tr>
+                    <th>Trip Route Name</th>
+                    <td>{{ booking_memo.vehicle_trip_route }}</td>
+                    <th>Owner Name</th>
+                    <td>{{ booking_memo.owner_name }}</td>
+                    <th>Contact No</th>
+                    <td>{{ booking_memo.contact_no }}</td>
+                </tr>
+            </tbody>
+         </table>
+         
+        <table class='table2'>
+            <tbody>
+                <tr>
+                    <th style='background:rgb(167, 165, 165);'>Coll Point</th>
+                    <th style='background:rgb(167, 165, 165);'>Del Point</th>
+                    <th style='background:rgb(167, 165, 165);'>GC No</th>
+                    <th style='width:400px;background:rgb(167, 165, 165);'>Consignor</th>
+                    <th style='width:400px;background:rgb(167, 165, 165);'>Consignee</th>
+                    <th style='background:rgb(167, 165, 165);'>Pkgs</th>
+                    <th style='background:rgb(167, 165, 165);'>Wt</th>
+                    <th style='background:rgb(167, 165, 165);'>Type</th>
+                    <th style='background:rgb(167, 165, 165);'>Del At</th>
+                    <th style='background:rgb(167, 165, 165);'>Del Type</th>
+                    <th style='background:rgb(167, 165, 165);'>Remark</th>
+                </tr>
+                {% for lr in lrs %}
+                <tr>
+                    <td>{{lr.coll_point}}</td>
+                    <td>{{lr.del_point}}</td>
+                    <td>{{lr.lr_booking.lr_number}}</td>
+                    <td>{{lr.lr_booking.consignor}}</td>
+                    <td>{{lr.lr_booking.consignee}}</td>
+                    <td style='text-align:center;'>{{lr.lr_booking.tpackage|floatformat:0 }}</td>
+                    <td>{{lr.lr_booking.tchargedwt|floatformat:0 }}<br>K.G</td>
+                    <td>{{lr.lr_booking.pay_type}}</td>
+                    <td>{{lr.lr_booking.del_at}}</td>
+                    <td>{{lr.lr_booking.del_type}}</td>
+                    <td>{{lr.lr_remarks}}</td>
+
+                </tr>
+                {% endfor %}          
+                <tr>
+                    <th colspan='5'>Total</th>
+                    <th>{{ booking_memo.lr_qty|floatformat:0  }}</th>
+                    <th>{{ booking_memo.total_weight|floatformat:0  }}</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class='table3'>
+            <tbody>
+                <tr>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>{{ user_name }}</th>
+                    <td></td>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>Prepared By</th>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>{{ booking_memo.created_at|date:'d/m/Y h:i A' }}</th>
+                    <th>Loading Clerk</th>
+                    <th>Owner's/Driver's Signature</th>
+                </tr>
+            </tbody>
+            
+        </table>
+    </div>
+    </body>
+</html>

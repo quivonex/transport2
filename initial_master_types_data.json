@@ -1,0 +1,3848 @@
+[
+  {
+      "model": "transactions.collectiontypes",
+      "pk": 1,
+      "fields": {
+          "type_name": "LOCAL",
+          "created_by": 1,
+          "created_at": "2024-12-16T00:00:00Z",
+          "updated_by": null,
+          "updated_at": "2024-12-16T00:00:00Z",
+          "is_active": true,
+          "is_show_booking_memo": true,
+          "flag": true
+      }
+  },
+  {
+      "model": "transactions.collectiontypes",
+      "pk": 2,
+      "fields": {
+          "type_name": "GODOWN",
+          "created_by": 1,
+          "created_at": "2024-12-16T00:00:00Z",
+          "updated_by": null,
+          "updated_at": "2024-12-16T00:00:00Z",
+          "is_active": true,
+          "is_show_booking_memo": true,
+          "flag": true
+      }
+  },
+  {
+      "model": "transactions.collectiontypes",
+      "pk": 3,
+      "fields": {
+          "type_name": "FTL",
+          "created_by": 1,
+          "created_at": "2024-12-16T00:00:00Z",
+          "updated_by": null,
+          "updated_at": "2024-12-16T00:00:00Z",
+          "is_active": true,
+          "is_show_booking_memo": true,
+          "flag": true
+      }
+  },
+  {
+      "model": "transactions.deliverytypes",
+      "pk": 1,
+      "fields": {
+          "type_name": "LOCAL",
+          "created_by": 1,
+          "created_at": "2024-12-16T00:00:00Z",
+          "updated_by": null,
+          "updated_at": "2024-12-16T00:00:00Z",
+          "is_active": true,
+          "is_show_booking_memo": true,
+          "flag": true
+      }
+  },
+  {
+      "model": "transactions.deliverytypes",
+      "pk": 2,
+      "fields": {
+          "type_name": "GODOWN",
+          "created_by": 1,
+          "created_at": "2024-12-16T00:00:00Z",
+          "updated_by": null,
+          "updated_at": "2024-12-16T00:00:00Z",
+          "is_active": true,
+          "is_show_booking_memo": true,
+          "flag": true
+      }
+  },
+  {
+      "model": "transactions.deliverytypes",
+      "pk": 3,
+      "fields": {
+          "type_name": "FTL",
+          "created_by": 1,
+          "created_at": "2024-12-16T00:00:00Z",
+          "updated_by": null,
+          "updated_at": "2024-12-16T00:00:00Z",
+          "is_active": true,
+          "is_show_booking_memo": true,
+          "flag": true
+      }
+  },
+  {
+      "model": "transactions.loadtypes",
+      "pk": 1,
+      "fields": {
+          "type_name": "Part Load (PL)",
+          "created_by": 1,
+          "created_at": "2024-12-16T00:00:00Z",
+          "updated_by": null,
+          "updated_at": "2024-12-16T00:00:00Z",
+          "is_active": true,
+          "flag": true
+      }
+  },
+  {
+      "model": "transactions.loadtypes",
+      "pk": 2,
+      "fields": {
+          "type_name": "FULL TRUCK LOAD (FTL)",
+          "created_by": 1,
+          "created_at": "2024-12-16T00:00:00Z",
+          "updated_by": null,
+          "updated_at": "2024-12-16T00:00:00Z",
+          "is_active": true,
+          "flag": true
+      }
+  },
+  {
+      "model": "transactions.paidtypes",
+      "pk": 1,
+      "fields": {
+          "type_name": "PAID",
+          "created_by": 1,
+          "created_at": "2024-12-16T00:00:00Z",
+          "updated_by": null,
+          "updated_at": "2024-12-16T00:00:00Z",
+          "is_active": true,
+          "flag": true
+      }
+  },
+  {
+      "model": "transactions.paidtypes",
+      "pk": 2,
+      "fields": {
+          "type_name": "UNPAID",
+          "created_by": 1,
+          "created_at": "2024-12-16T00:00:00Z",
+          "updated_by": null,
+          "updated_at": "2024-12-16T00:00:00Z",
+          "is_active": true,
+          "flag": true
+      }
+  },
+  {
+      "model": "transactions.paidtypes",
+      "pk": 3,
+      "fields": {
+          "type_name": "CANCEL",
+          "created_by": 1,
+          "created_at": "2024-12-16T00:00:00Z",
+          "updated_by": null,
+          "updated_at": "2024-12-16T00:00:00Z",
+          "is_active": true,
+          "flag": true
+      }
+  },
+  {
+      "model": "transactions.paytypes",
+      "pk": 1,
+      "fields": {
+          "type_name": "PAID",
+          "created_by": 1,
+          "created_at": "2024-12-16T00:00:00Z",
+          "updated_by": null,
+          "updated_at": "2024-12-16T00:00:00Z",
+          "is_active": true,
+          "flag": true
+      }
+  },
+  {
+      "model": "transactions.paytypes",
+      "pk": 2,
+      "fields": {
+          "type_name": "TOPAY",
+          "created_by": 1,
+          "created_at": "2024-12-16T00:00:00Z",
+          "updated_by": null,
+          "updated_at": "2024-12-16T00:00:00Z",
+          "is_active": true,
+          "flag": true
+      }
+  },
+  {
+      "model": "transactions.paytypes",
+      "pk": 3,
+      "fields": {
+          "type_name": "TBB",
+          "created_by": 1,
+          "created_at": "2024-12-16T00:00:00Z",
+          "updated_by": null,
+          "updated_at": "2024-12-16T00:00:00Z",
+          "is_active": true,
+          "flag": true
+      }
+  },
+  {
+      "model": "account.deductionreasontype",
+      "pk": 1,
+      "fields": {
+        "type_name": "DAMAGE",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "account.deductionreasontype",
+      "pk": 2,
+      "fields": {
+        "type_name": "SHORT",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "account.deductionreasontype",
+      "pk": 3,
+      "fields": {
+        "type_name": "EXTRA HAMALI",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "account.deductionreasontype",
+      "pk": 4,
+      "fields": {
+        "type_name": "KATA CHARGES",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "account.deductionreasontype",
+      "pk": 5,
+      "fields": {
+        "type_name": "CRANE CHARGES",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "account.deductionreasontype",
+      "pk": 6,
+      "fields": {
+        "type_name": "VOLTING CHARGES",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "accounts.effecttypes",
+      "pk": 1,
+      "fields": {
+        "type_name": "VEHICLE NO",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "accounts.effecttypes",
+      "pk": 2,
+      "fields": {
+        "type_name": "LR NO",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "accounts.effecttypes",
+      "pk": 3,
+      "fields": {
+        "type_name": "EMPLOYEE NAME",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "accounts.effecttypes",
+      "pk": 4,
+      "fields": {
+        "type_name": "PARTY NAME",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "accounts.effecttypes",
+      "pk": 5,
+      "fields": {
+        "type_name": "HIRE BILL NO",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "accounts.effecttypes",
+      "pk": 6,
+      "fields": {
+        "type_name": "MEMO NO",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "accounts.effecttypes",
+      "pk": 7,
+      "fields": {
+        "type_name": "DRIVER NAME",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "accounts.effecttypes",
+      "pk": 8,
+      "fields": {
+        "type_name": "DELIVERY MEMO NO",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "accounts.effecttypes",
+      "pk": 9,
+      "fields": {
+        "type_name": "TRIP NO",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "accounts.effecttypes",
+      "pk": 10,
+      "fields": {
+        "type_name": "OTHER",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "accounts.paymenttypes",
+      "pk": 1,
+      "fields": {
+        "type_name": "PETROL EXPENSES",
+        "effect": 1,
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "accounts.paymenttypes",
+      "pk": 2,
+      "fields": {
+        "type_name": "DIESEL EXPENSES",
+        "effect": 1,
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "accounts.paymenttypes",
+      "pk": 3,
+      "fields": {
+        "type_name": "OFFICE EXPENSES",
+        "effect": 1,
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "accounts.paymenttypes",
+      "pk": 4,
+      "fields": {
+        "type_name": "COMPUTER EXPENSES",
+        "effect": 1,
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "accounts.paymenttypes",
+      "pk": 5,
+      "fields": {
+        "type_name": "STATIONERY EXPENSES",
+        "effect": 1,
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "accounts.paymenttypes",
+      "pk": 6,
+      "fields": {
+        "type_name": "HOTEL EXPENSES",
+        "effect": 1,
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "accounts.paymenttypes",
+      "pk": 7,
+      "fields": {
+        "type_name": "CRANE CHARGES",
+        "effect": 1,
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "accounts.paymenttypes",
+      "pk": 8,
+      "fields": {
+        "type_name": "OTHERS",
+        "effect": 1,
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "accounts.paymenttypes",
+      "pk": 9,
+      "fields": {
+        "type_name": "TOLL EXPENSES",
+        "effect": 1,
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "accounts.paymenttypes",
+      "pk": 10,
+      "fields": {
+        "type_name": "LOADING CHARGES",
+        "effect": 1,
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "branches.employeetype",
+      "pk": 1,
+      "fields": {
+        "type_name": "HR MANAGER",
+        "description": "Human Resources Manager",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "branches.employeetype",
+      "pk": 2,
+      "fields": {
+        "type_name": "FINANCE MANAGER",
+        "description": "Finance Department Manager",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "branches.employeetype",
+      "pk": 3,
+      "fields": {
+        "type_name": "CUSTOMER SERVICE MANAGER",
+        "description": "Manager for Customer Support",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "account.gstmaster",
+      "pk": 1,
+      "fields": {
+        "type_name": "SGST",
+        "percentage": 9.00,
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "account.gstmaster",
+      "pk": 2,
+      "fields": {
+        "type_name": "CGST",
+        "percentage": 9.00,
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "parties.partytypes",
+      "pk": 1,
+      "fields": {
+        "type_name": "WALKING",
+        "description": "Walk-in party",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "parties.partytypes",
+      "pk": 2,
+      "fields": {
+        "type_name": "BILLING",
+        "description": "Billing party",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "parties.partytypes",
+      "pk": 3,
+      "fields": {
+        "type_name": "IS CONTRACTED",
+        "description": "Contracted party",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "items.quotationtypes",
+      "pk": 1,
+      "fields": {
+        "type_name": "PER KG",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "items.quotationtypes",
+      "pk": 2,
+      "fields": {
+        "type_name": "FIXED",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "items.quotationtypes",
+      "pk": 3,
+      "fields": {
+        "type_name": "SPECIAL",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "items.quotationtypes",
+      "pk": 4,
+      "fields": {
+        "type_name": "PER/MULTIPLE",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "vehicals.vehicaltypes",
+      "pk": 1,
+      "fields": {
+        "type_name": "TATA 407",
+        "capacity": 4,
+        "description": "4-wheeler truck",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "vehicals.vehicaltypes",
+      "pk": 2,
+      "fields": {
+        "type_name": "TATA ACE",
+        "capacity": 2,
+        "description": "Mini truck",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "vehicals.vehicaltypes",
+      "pk": 3,
+      "fields": {
+        "type_name": "ASHOK LEYLAND DOST",
+        "capacity": 3,
+        "description": "Light truck",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "vehicals.vehicaltypes",
+      "pk": 4,
+      "fields": {
+        "type_name": "MAHINDRA BOLERO PICK UP",
+        "capacity": 5,
+        "description": "Pickup truck",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "vehicals.vehicaltypes",
+      "pk": 5,
+      "fields": {
+        "type_name": "EICHER 19 FEET",
+        "capacity": 7,
+        "description": "Large truck",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "vehicals.vehicaltypes",
+      "pk": 6,
+      "fields": {
+        "type_name": "TATA TRUCK (6 TYRE)",
+        "capacity": 10,
+        "description": "6-tyre large truck",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "vehicals.vendortypes",
+      "pk": 1,
+      "fields": {
+        "type_name": "ATTACH",        
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "vehicals.vendortypes",
+      "pk": 2,
+      "fields": {
+        "type_name": "OWN",         
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "vehicals.vendortypes",
+      "pk": 3,
+      "fields": {
+        "type_name": "MARKET",          
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+  {
+    "model": "company.statemaster",
+    "pk": 2,
+    "fields": {
+        "state_name": "JAMMU AND KASHMIR",
+        "state_code": "1",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 3,
+    "fields": {
+        "state_name": "HIMACHAL PRADESH",
+        "state_code": "2",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 4,
+    "fields": {
+        "state_name": "PUNJAB",
+        "state_code": "3",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 5,
+    "fields": {
+        "state_name": "CHANDIGARH",
+        "state_code": "4",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 6,
+    "fields": {
+        "state_name": "UTTARAKHAND",
+        "state_code": "5",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 7,
+    "fields": {
+        "state_name": "HARYANA",
+        "state_code": "6",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 8,
+    "fields": {
+        "state_name": "DELHI",
+        "state_code": "7",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 9,
+    "fields": {
+        "state_name": "RAJASTHAN",
+        "state_code": "8",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 10,
+    "fields": {
+        "state_name": "UTTAR PRADESH",
+        "state_code": "9",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 11,
+    "fields": {
+        "state_name": "BIHAR",
+        "state_code": "10",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 12,
+    "fields": {
+        "state_name": "SIKKIM",
+        "state_code": "11",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 13,
+    "fields": {
+        "state_name": "ARUNACHAL PRADESH",
+        "state_code": "12",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 14,
+    "fields": {
+        "state_name": "NAGALAND",
+        "state_code": "13",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 15,
+    "fields": {
+        "state_name": "MANIPUR",
+        "state_code": "14",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 16,
+    "fields": {
+        "state_name": "MIZORAM",
+        "state_code": "15",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 17,
+    "fields": {
+        "state_name": "TRIPURA",
+        "state_code": "16",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 18,
+    "fields": {
+        "state_name": "MEGHALAYA",
+        "state_code": "17",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 19,
+    "fields": {
+        "state_name": "ASSAM",
+        "state_code": "18",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 20,
+    "fields": {
+        "state_name": "WEST BENGAL",
+        "state_code": "19",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 21,
+    "fields": {
+        "state_name": "JHARKHAND",
+        "state_code": "20",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 22,
+    "fields": {
+        "state_name": "ORISSA",
+        "state_code": "21",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 23,
+    "fields": {
+        "state_name": "CHHATTISGARH",
+        "state_code": "22",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 24,
+    "fields": {
+        "state_name": "MADHYA PRADESH",
+        "state_code": "23",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 25,
+    "fields": {
+        "state_name": "GUJARAT",
+        "state_code": "24",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 26,
+    "fields": {
+        "state_name": "DAMAN AND DIU",
+        "state_code": "25",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 27,
+    "fields": {
+        "state_name": "DADAR AND NAGAR HAVELI",
+        "state_code": "26",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 28,
+    "fields": {
+        "state_name": "KARNATAKA",
+        "state_code": "28",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 29,
+    "fields": {
+        "state_name": "GOA",
+        "state_code": "29",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 30,
+    "fields": {
+        "state_name": "LAKSHADWEEP",
+        "state_code": "30",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 31,
+    "fields": {
+        "state_name": "KERALA",
+        "state_code": "31",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 32,
+    "fields": {
+        "state_name": "TAMIL NADU",
+        "state_code": "32",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 33,
+    "fields": {
+        "state_name": "PUDUCHERRY",
+        "state_code": "33",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 34,
+    "fields": {
+        "state_name": "ANDAMAN AND NICOBAR",
+        "state_code": "34",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 35,
+    "fields": {
+        "state_name": "TELANGANA",
+        "state_code": "35",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+  {
+    "model": "company.statemaster",
+    "pk": 36,
+    "fields": {
+        "state_name": "ANDHRA PRADESH",
+        "state_code": "36",
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+    }
+  },
+    {
+      "model": "account.voucherreceipttype",
+      "pk": 1,
+      "fields": {
+        "type_name": "LR Agst Ref",
+        "code": 1001,
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "account.voucherreceipttype",
+      "pk": 2,
+      "fields": {
+        "type_name": "Bill Agst Ref",
+        "code": 1002,
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "account.voucherreceipttype",
+      "pk": 3,
+      "fields": {
+        "type_name": "Contra",
+        "code": 1001,
+        "created_by": 1,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_by": null,
+        "updated_at": "2024-12-16T00:00:00Z",
+        "is_active": true,
+        "flag": true
+      }
+    },
+    {
+      "model": "account.voucherpaymenttype",
+      "pk": 1,
+      "fields": {
+          "type_name": "PETROL EXPENSES",
+          "effect": "VEHICLE NO",
+          "mode_type": "SINGLE",
+          "code": 101,
+          "created_at": "2024-12-16T00:00:00Z",
+          "updated_at": "2024-12-16T00:00:00Z",            
+          "created_by": 1,
+          "updated_by": null
+      }
+  },
+  {
+      "model": "account.voucherpaymenttype",
+      "pk": 2,
+      "fields": {
+          "type_name": "DIESEL EXPENSES",
+          "effect": "VEHICLE NO",
+          "mode_type": "SINGLE",
+          "code": 102,
+          "created_at": "2024-12-16T00:00:00Z",
+          "updated_at": "2024-12-16T00:00:00Z",           
+          "created_by": 1,
+          "updated_by": null
+      }
+  },
+  {
+      "model": "account.voucherpaymenttype",
+      "pk": 3,
+      "fields": {
+          "type_name": "OFFICE EXPENSES",
+          "effect": "EMPLOYEE ID",
+          "mode_type": "MULTIPLE",
+          "code": 103,
+          "created_at": "2024-12-16T00:00:00Z",
+          "updated_at": "2024-12-16T00:00:00Z",            
+          "created_by": 1,
+          "updated_by": null
+      }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 4,
+    "fields": {
+        "type_name": "COMPUTER EXPENSES",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 104,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 5,
+    "fields": {
+        "type_name": "STATIONERY EXPENSES",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 105,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 6,
+    "fields": {
+        "type_name": "HOTEL EXPENSES",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 106,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 7,
+    "fields": {
+        "type_name": "CRANE CHARGES",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 107,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 8,
+    "fields": {
+        "type_name": "HAMALI CHARGES",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 108,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 9,
+    "fields": {
+        "type_name": "MATHADI CHARGES",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 109,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 10,
+    "fields": {
+        "type_name": "UNION CHARGES",
+        "effect": "LR NO",
+        "mode_type": "MULTIPLE",
+        "code": 110,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 11,
+    "fields": {
+        "type_name": "WAITING CHARGES",
+        "effect": "LR NO",
+        "mode_type": "MULTIPLE",
+        "code": 111,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 12,
+    "fields": {
+        "type_name": "TOLL CHARGES",
+        "effect": "VEHICLE NO",
+        "mode_type": "MULTIPLE",
+        "code": 112,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 13,
+    "fields": {
+        "type_name": "OUTSIDE CHARGES",
+        "effect": "LR NO",
+        "mode_type": "MULTIPLE",
+        "code": 113,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 14,
+    "fields": {
+        "type_name": "OTHER CHARGES ",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 114,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 15,
+    "fields": {
+        "type_name": "EMPLOYEES ADVANCE",
+        "effect": "EMPLOYEE NAME",
+        "mode_type": "MULTIPLE",
+        "code": 115,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 16,
+    "fields": {
+        "type_name": "BRANCH TRANSFER",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 116,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 17,
+    "fields": {
+        "type_name": "COMMISSION",
+        "effect": "PARTY NAME",
+        "mode_type": "MULTIPLE",
+        "code": 117,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 18,
+    "fields": {
+        "type_name": "VEHICLE MAINTENSES ( GENERAL)",
+        "effect": "VEHICLE NO",
+        "mode_type": "MULTIPLE",
+        "code": 118,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 19,
+    "fields": {
+        "type_name": "VEHICLE MAINTENSES ( CAPITAL )",
+        "effect": "VEHICLE NO",
+        "mode_type": "MULTIPLE",
+        "code": 119,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 20,
+    "fields": {
+        "type_name": "VEHICLE MAINTENSES ( LABOUR )",
+        "effect": "VEHICLE NO",
+        "mode_type": "MULTIPLE",
+        "code": 120,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 21,
+    "fields": {
+        "type_name": "COD PAYMENT",
+        "effect": "LR NO",
+        "mode_type": "MULTIPLE",
+        "code": 121,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 22,
+    "fields": {
+        "type_name": "DRIVER HIRE CHARGES ( DRIVER)",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 122,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 23,
+    "fields": {
+        "type_name": "DRIVER HIRE CHARGES ( STAFF )",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 123,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 24,
+    "fields": {
+        "type_name": "RTO EXPENSES",
+        "effect": "VEHICLE NO",
+        "mode_type": "MULTIPLE",
+        "code": 124,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 25,
+    "fields": {
+        "type_name": "CLEANER EXPENSES",
+        "effect": "LR NO",
+        "mode_type": "MULTIPLE",
+        "code": 125,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 26,
+    "fields": {
+        "type_name": "POOJA EXPENSES",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 126,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 27,
+    "fields": {
+        "type_name": "VEHICLE EXPENSES",
+        "effect": "VEHICLE NO",
+        "mode_type": "MULTIPLE",
+        "code": 127,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 28,
+    "fields": {
+        "type_name": "TRAVELLING & CONVEYANCE",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 128,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 29,
+    "fields": {
+        "type_name": "INCENTIVE",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 129,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 30,
+    "fields": {
+        "type_name": "DEBIT NOTE",
+        "effect": "LR NO",
+        "mode_type": "MULTIPLE",
+        "code": 130,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 31,
+    "fields": {
+        "type_name": "MATERIAL RELEASE",
+        "effect": "LR NO",
+        "mode_type": "MULTIPLE",
+        "code": 131,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 32,
+    "fields": {
+        "type_name": "TYRE EXPENSES",
+        "effect": "VEHICLE NO",
+        "mode_type": "MULTIPLE",
+        "code": 132,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 33,
+    "fields": {
+        "type_name": "STAFF WELFARE",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 133,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 34,
+    "fields": {
+        "type_name": "COURIER CHARGES",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 134,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 35,
+    "fields": {
+        "type_name": "BRANCH DEPOSIT",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 135,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 36,
+    "fields": {
+        "type_name": "PHONE BILL",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 136,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 37,
+    "fields": {
+        "type_name": "ELECTRICITY BILL",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 137,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 38,
+    "fields": {
+        "type_name": "WATER BILL",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 138,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 39,
+    "fields": {
+        "type_name": "VEHICLE HIRE BALANCE PAYMENT",
+        "effect": "HIRE BILL NO",
+        "mode_type": "MULTIPLE",
+        "code": 139,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 40,
+    "fields": {
+        "type_name": "VEHICLE HIRE ADVANCE PAYMENT",
+        "effect": "HIRE BILL NO",
+        "mode_type": "MULTIPLE",
+        "code": 140,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 41,
+    "fields": {
+        "type_name": "STAFF SALARY",
+        "effect": "EMPLOYEE NAME",
+        "mode_type": "MULTIPLE",
+        "code": 141,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 42,
+    "fields": {
+        "type_name": "COLLECTION MEMO BALANCE PAYMENT",
+        "effect": "COLLECTION MEMO NO",
+        "mode_type": "MULTIPLE",
+        "code": 142,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 43,
+    "fields": {
+        "type_name": "WEIGHT SLIP",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 143,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 44,
+    "fields": {
+        "type_name": "HAMALI MEMO CHARGES",
+        "effect": "MEMO NO",
+        "mode_type": "MULTIPLE",
+        "code": 144,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 45,
+    "fields": {
+        "type_name": "HAMALI LR CHARGES",
+        "effect": "LR NO",
+        "mode_type": "MULTIPLE",
+        "code": 145,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 46,
+    "fields": {
+        "type_name": "VEHICLE SPARE PART",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 146,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 47,
+    "fields": {
+        "type_name": "OFFICE RENT",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 147,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 48,
+    "fields": {
+        "type_name": "VEHICLE FINE",
+        "effect": "VEHICLE NO",
+        "mode_type": "MULTIPLE",
+        "code": 148,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 49,
+    "fields": {
+        "type_name": "DP PAYMENT",
+        "effect": "DRIVER NAME",
+        "mode_type": "MULTIPLE",
+        "code": 149,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 50,
+    "fields": {
+        "type_name": "LEGAL & PROFESSIONAL FEES",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 150,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 51,
+    "fields": {
+        "type_name": "OWNER EXPENSES",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 151,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 52,
+    "fields": {
+        "type_name": "PIGMI",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 152,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 53,
+    "fields": {
+        "type_name": "DRIVER SALARY ",
+        "effect": "DRIVER NAME",
+        "mode_type": "MULTIPLE",
+        "code": 153,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 54,
+    "fields": {
+        "type_name": "MOBILE RECHARGE",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 154,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 55,
+    "fields": {
+        "type_name": "GOOGLE PAY PAYMENT",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 155,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 56,
+    "fields": {
+        "type_name": "HAND LOAN",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 156,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 57,
+    "fields": {
+        "type_name": "TYRE REMOLDING",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 157,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 58,
+    "fields": {
+        "type_name": "CAPITAL ACCOUNT",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 158,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 59,
+    "fields": {
+        "type_name": "REPAIRES & MAINTENANCE",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 159,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 60,
+    "fields": {
+        "type_name": "BUILDING & CONSTRUCTION",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 160,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 61,
+    "fields": {
+        "type_name": "VEHICLE MAINTENSES ( GODOWN)",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 161,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 62,
+    "fields": {
+        "type_name": "RO ADJECTMENT PAYMENT",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 162,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 63,
+    "fields": {
+        "type_name": "DRIVER ADVANCE",
+        "effect": "DRIVER NAME",
+        "mode_type": "MULTIPLE",
+        "code": 163,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 64,
+    "fields": {
+        "type_name": "TRAFFIC FINE",
+        "effect": "VEHICLE NO",
+        "mode_type": "MULTIPLE",
+        "code": 164,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 65,
+    "fields": {
+        "type_name": "STAFF SALARY ADVANCE",
+        "effect": "EMPLOYEE NAME",
+        "mode_type": "MULTIPLE",
+        "code": 165,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 66,
+    "fields": {
+        "type_name": "STAFF BONUS",
+        "effect": "EMPLOYEE NAME",
+        "mode_type": "MULTIPLE",
+        "code": 166,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 67,
+    "fields": {
+        "type_name": "CNG GAS EXPENSES",
+        "effect": "VEHICLE NO",
+        "mode_type": "MULTIPLE",
+        "code": 167,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 68,
+    "fields": {
+        "type_name": "EXTRA PAYMENT RETURN",
+        "effect": "LR NO",
+        "mode_type": "MULTIPLE",
+        "code": 168,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 69,
+    "fields": {
+        "type_name": "PASSING EXPENSES",
+        "effect": "VEHICLE NO",
+        "mode_type": "MULTIPLE",
+        "code": 169,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 70,
+    "fields": {
+        "type_name": "MOBILE HANDSET",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 170,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 71,
+    "fields": {
+        "type_name": "OIL PURCHASE EXP.",
+        "effect": "VEHICLE NO",
+        "mode_type": "MULTIPLE",
+        "code": 171,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 72,
+    "fields": {
+        "type_name": "GREASE PURCHASE EXP",
+        "effect": "VEHICLE NO",
+        "mode_type": "MULTIPLE",
+        "code": 172,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 73,
+    "fields": {
+        "type_name": "BTS TRAVELS EXPENSES",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 173,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 74,
+    "fields": {
+        "type_name": "PUC EXPENSES",
+        "effect": "VEHICLE NO",
+        "mode_type": "MULTIPLE",
+        "code": 174,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 75,
+    "fields": {
+        "type_name": "TP CHARGES",
+        "effect": "VEHICLE NO",
+        "mode_type": "MULTIPLE",
+        "code": 175,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 76,
+    "fields": {
+        "type_name": "DONATION EXPENSES",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 176,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 77,
+    "fields": {
+        "type_name": "VEHICLE INSURENCE",
+        "effect": "VEHICLE NO",
+        "mode_type": "MULTIPLE",
+        "code": 177,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 78,
+    "fields": {
+        "type_name": "LAND PURCHASE",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 178,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 79,
+    "fields": {
+        "type_name": "GOLDEN W SHOP",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 179,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 80,
+    "fields": {
+        "type_name": "COMMISSION FRANCHISE",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 180,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 81,
+    "fields": {
+        "type_name": "DRIVER BONUS",
+        "effect": "DRIVER NAME",
+        "mode_type": "MULTIPLE",
+        "code": 181,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 82,
+    "fields": {
+        "type_name": "FREIGHT RETURN CHARGES",
+        "effect": "LR NO",
+        "mode_type": "MULTIPLE",
+        "code": 182,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 83,
+    "fields": {
+        "type_name": "INCOME TAX CHARGES",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 183,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 84,
+    "fields": {
+        "type_name": "DELIVERY MEMO BALANCE PAYMENT",
+        "effect": "DELIVERY MEMO NO",
+        "mode_type": "MULTIPLE",
+        "code": 184,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 85,
+    "fields": {
+        "type_name": "PTS TRANS LOGISTICS",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 185,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 86,
+    "fields": {
+        "type_name": "DELIVERY MEMO ADVANCE PAYMENT",
+        "effect": "DELIVERY MEMO NO",
+        "mode_type": "MULTIPLE",
+        "code": 186,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 87,
+    "fields": {
+        "type_name": "COLLECTION MEMO ADVANCE PAYMENT",
+        "effect": "COLLECTION MEMO NO",
+        "mode_type": "MULTIPLE",
+        "code": 187,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 88,
+    "fields": {
+        "type_name": "TRIP VEHICLE HIRE BALANCE PAYMENT",
+        "effect": "TRIP NO",
+        "mode_type": "MULTIPLE",
+        "code": 188,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 89,
+    "fields": {
+        "type_name": "TRIP VEHICLE HIRE ADVANCE PAYMENT",
+        "effect": "TRIP NO",
+        "mode_type": "MULTIPLE",
+        "code": 189,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 90,
+    "fields": {
+        "type_name": "NEFT/RTGS AGAIN RECEIVED",
+        "effect": "LR NO",
+        "mode_type": "MULTIPLE",
+        "code": 190,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 91,
+    "fields": {
+        "type_name": "CHEQUE AGAIN RECEIVED",
+        "effect": "LR NO",
+        "mode_type": "MULTIPLE",
+        "code": 191,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 92,
+    "fields": {
+        "type_name": "UPI AGAIN RECEIVED",
+        "effect": "LR NO",
+        "mode_type": "MULTIPLE",
+        "code": 192,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 93,
+    "fields": {
+        "type_name": "BILL GENERATE",
+        "effect": "LR NO",
+        "mode_type": "MULTIPLE",
+        "code": 193,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 94,
+    "fields": {
+        "type_name": "GRAMPANCHAYAT TAX",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 149,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 95,
+    "fields": {
+        "type_name": "PARKING CHARGES",
+        "effect": "VEHICLE NO",
+        "mode_type": "MULTIPLE",
+        "code": 195,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 96,
+    "fields": {
+        "type_name": "HOUSE RENT",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 196,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 97,
+    "fields": {
+        "type_name": "MEETING EXPENSES",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 197,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 98,
+    "fields": {
+        "type_name": "ATM WITHDRAW",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 198,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 99,
+    "fields": {
+        "type_name": "BANK CHARGES",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 199,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "account.voucherpaymenttype",
+    "pk": 100,
+    "fields": {
+        "type_name": "GST CHARGES",
+        "effect": "OTHER",
+        "mode_type": "MULTIPLE",
+        "code": 200,
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 1,
+    "fields": {
+        "item_name": "ANGLE",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 2,
+    "fields": {
+        "item_name": "BAG",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 3,
+    "fields": {
+        "item_name": "BAR",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 4,
+    "fields": {
+        "item_name": "BARREL",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 5,
+    "fields": {
+        "item_name": "BATTERY",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 6,
+    "fields": {
+        "item_name": "BIG PATTERN",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 7,
+    "fields": {
+        "item_name": "BIN",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 8,
+    "fields": {
+        "item_name": "BLOCK",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 9,
+    "fields": {
+        "item_name": "BOX",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 10,
+    "fields": {
+        "item_name": "BUCKET",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 11,
+    "fields": {
+        "item_name": "BUMPER",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 12,
+    "fields": {
+        "item_name": "BUNDLE",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 13,
+    "fields": {
+        "item_name": "C/B",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 14,
+    "fields": {
+        "item_name": "CABINET",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 15,
+    "fields": {
+        "item_name": "CAN",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 16,
+    "fields": {
+        "item_name": "CARATES",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 17,
+    "fields": {
+        "item_name": "CARBOYS",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 18,
+    "fields": {
+        "item_name": "CASTING",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 19,
+    "fields": {
+        "item_name": "CHAIR",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 20,
+    "fields": {
+        "item_name": "COIL",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 21,
+    "fields": {
+        "item_name": "COMPRESSOR",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 22,
+    "fields": {
+        "item_name": "CONTAINER",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 23,
+    "fields": {
+        "item_name": "CRANK",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 24,
+    "fields": {
+        "item_name": "CRATES",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 25,
+    "fields": {
+        "item_name": "CYLINDER",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 26,
+    "fields": {
+        "item_name": "DIE",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 27,
+    "fields": {
+        "item_name": "DISH",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 28,
+    "fields": {
+        "item_name": "DOOR",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 29,
+    "fields": {
+        "item_name": "DRUM",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 30,
+    "fields": {
+        "item_name": "EMPTY W/B",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 31,
+    "fields": {
+        "item_name": "FOAM SHEET",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 32,
+    "fields": {
+        "item_name": "GENSETS",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 33,
+    "fields": {
+        "item_name": "GLASS",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 34,
+    "fields": {
+        "item_name": "GUNNY BAG",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 35,
+    "fields": {
+        "item_name": "GUNNY BUNDLE",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 36,
+    "fields": {
+        "item_name": "HOUSE HOLD ITEMS",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 37,
+    "fields": {
+        "item_name": "J BOX",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 38,
+    "fields": {
+        "item_name": "JOB WORKS",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 39,
+    "fields": {
+        "item_name": "JUMBO BAG",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 40,
+    "fields": {
+        "item_name": "JUMBO GUNNY BAG",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 41,
+    "fields": {
+        "item_name": "LOOSE",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 42,
+    "fields": {
+        "item_name": "LOOSE BAR",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 43,
+    "fields": {
+        "item_name": "LOOSE SPRING",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 44,
+    "fields": {
+        "item_name": "LOOSE/BOX",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 45,
+    "fields": {
+        "item_name": "MACHINE",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 46,
+    "fields": {
+        "item_name": "METAL PETI",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 47,
+    "fields": {
+        "item_name": "PACKET",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 48,
+    "fields": {
+        "item_name": "PALLET",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 49,
+    "fields": {
+        "item_name": "PANEL",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 50,
+    "fields": {
+        "item_name": "PATRA",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 51,
+    "fields": {
+        "item_name": "PATTERN",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 52,
+    "fields": {
+        "item_name": "PCS",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 53,
+    "fields": {
+        "item_name": "PIPE",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 54,
+    "fields": {
+        "item_name": "PIPE BUNDLE",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 55,
+    "fields": {
+        "item_name": "PLASTIC BAG",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 56,
+    "fields": {
+        "item_name": "PLASTIC DRUM",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 57,
+    "fields": {
+        "item_name": "PLATE",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 58,
+    "fields": {
+        "item_name": "POKET",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 59,
+    "fields": {
+        "item_name": "RACK",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 60,
+    "fields": {
+        "item_name": "RING",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 61,
+    "fields": {
+        "item_name": "ROD",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 62,
+    "fields": {
+        "item_name": "ROLL",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 63,
+    "fields": {
+        "item_name": "ROTOR",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 64,
+    "fields": {
+        "item_name": "SCRAP",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 65,
+    "fields": {
+        "item_name": "SHAFT",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 66,
+    "fields": {
+        "item_name": "SHEET",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 67,
+    "fields": {
+        "item_name": "SMALL PATTERN",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 68,
+    "fields": {
+        "item_name": "SPRAY",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 69,
+    "fields": {
+        "item_name": "SPRING",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 70,
+    "fields": {
+        "item_name": "TABLE",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 71,
+    "fields": {
+        "item_name": "TANK",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 72,
+    "fields": {
+        "item_name": "TRANK",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 73,
+    "fields": {
+        "item_name": "TRANSFORMER",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 74,
+    "fields": {
+        "item_name": "TRAY",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 75,
+    "fields": {
+        "item_name": "TROLLY",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 76,
+    "fields": {
+        "item_name": "TUBE",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 77,
+    "fields": {
+        "item_name": "TWO WHEELER",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 78,
+    "fields": {
+        "item_name": "TYRE",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 79,
+    "fields": {
+        "item_name": "UPS",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 80,
+    "fields": {
+        "item_name": "W/B",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 81,
+    "fields": {
+        "item_name": "W/C",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 82,
+    "fields": {
+        "item_name": "W/P",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 83,
+    "fields": {
+        "item_name": "WHEEL",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "items.itemdetailsmaster",
+    "pk": 84,
+    "fields": {
+        "item_name": "WIRE BUNDLE",
+        "description": "",        
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "delivery.truckunloadingreportstatus",
+    "pk": 1,
+    "fields": {
+        "status": "OK",               
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "delivery.truckunloadingreportstatus",
+    "pk": 2,
+    "fields": {
+        "status": "SHORT",               
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "delivery.truckunloadingreportstatus",
+    "pk": 3,
+    "fields": {
+        "status": "DAMMAGE",               
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "delivery.truckunloadingreportstatus",
+    "pk": 4,
+    "fields": {
+        "status": "WET",               
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "delivery.truckunloadingreportstatus",
+    "pk": 5,
+    "fields": {
+        "status": "BROKEN",               
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "delivery.truckunloadingreportstatus",
+    "pk": 6,
+    "fields": {
+        "status": "RAPPED",               
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  },
+  {
+    "model": "delivery.truckunloadingreportstatus",
+    "pk": 7,
+    "fields": {
+        "status": "EXCCESS",               
+        "created_at": "2024-12-16T00:00:00Z",
+        "updated_at": "2024-12-16T00:00:00Z",            
+        "created_by": 1,
+        "updated_by": null
+    }
+  }
+]

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>DCS</title>
+       
+        <style>
+            table{width:100%;height: 100%;
+                border: 1px solid black;border-collapse: collapse;}
+                th,td{border:1px solid black; padding:3px 5px;font-size: 13px;
+                }
+                .head-table
+                {
+                    position: relative;
+                    bottom: 10px;
+                    border: none;
+                    th,td{
+                        border: none;
+                    }
+                }
+               
+                .table2
+                {
+                    td,th{
+                        text-align: center;
+                    }
+                }
+                .table3
+                 {
+                    border: none;
+                    th,td{
+                        border:none;
+                        text-align: center;
+                        }
+                 }
+                 .main-heading
+                 {
+                    font-family:'Times New Roman';
+                    color: red;
+                    font-weight: bold;
+                    text-transform: uppercase;    
+                    font-size: 35px;
+                    position:relative;
+                    bottom:90px;
+                    text-align:center;
+                 }
+                .heading
+                {
+                    position:relative;
+                    text-align: center;
+                    bottom: 130px;
+                }
+                 .header {
+                    text-align: center;
+                  }
+                  .header img {
+                    width: 170px;
+                    height:150px;
+                    float: left;
+                    right: 30px;
+                    position: relative;
+                    bottom: 170px;
+                  }
+                  .info
+                  {
+                   position: relative;
+                   bottom:120px;
+                   right:70px;
+                  }
+               .barcode {
+                position: relative;
+                right: -535px;
+                width: 200px;
+                height: 50px;
+                top:110px;
+               }
+               .barcode img {
+                 width: 100%;
+                 height: 35px;
+               }
+               .barcode h3 {
+                 display: none;
+               }
+               .address{
+                font-size:13px;
+                white-space: normal;
+                word-wrap: break-word;
+                width:620px;
+                position: relative;
+                left: 50px;
+              }
+              .main-t{
+                position: relative;
+                bottom: 100px;
+              }
+
+
+             
+  /*  css for denotation */
+
+  .table-container1 {
+    margin-bottom: 100px;
+    max-width: 500px;
+    margin: auto;
+  }
+ 
+  .denomination-table1 {
+    margin-bottom: 30px;
+    width: 50%;
+    height: 50%;
+    border-collapse: collapse;
+    margin-left: 190px;
+   
+  }
+ 
+  .denomination-table1 th, .denomination-table1 td {
+    margin-bottom: 100px;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+ 
+  .total-row {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+ 
+  .warning-box {
+    margin-bottom: 100px;
+
+    padding: 10px;
+    background-color: #ffe6e6;
+    border: 1px solid #ff0000;
+    color: #ff0000;
+    text-align: center;
+    font-weight: bold;
+  }
+ 
+        </style>
+    </head>
+
+    <body>
+       
+        <div class='barcode'>
+       
+           </table>
+          </div>
+          <h3 class='main-heading'>{{ company.company_name }}</h3>
+          <div class='header'>
+            <img src='{{ MEDIA_URL }}{{ company.company_logo }}' alt='Company Logo' />
+
+            <div class='info'>
+                <p class='address'>{{ company.address }}</p>
+                <p style='position:relative;bottom:10px;right:25px;font-size:13px;'>
+                    EMAIL: <b style='font-weight:normal;font-size:14px;'>{{ company.email_id }}&nbsp;&nbsp;MOB:{{ company.contact_number }}</b>
+                </p>
+            </div>
+
+          </div>
+
+
+    <div class='main-t'>
+
+        <table class='head-table'>
+            <tbody>
+           
+                <tr>
+                    <th style='width:95px;'>Branch Name:</th>
+                    <td>{{ statement.branch_name }}</td>
+                    <th style='font-size:15px;'>DAILY CASH STATEMENT</th>
+                    <th>Date:</th>
+                    <td>{{ statement.date|date:'d/m/Y' }}</td>
+                </tr>
+               
+            </tbody>
+        <table class='table2'>
+            <tbody>
+                <tr>
+                    <!-- <div>
+                        <strong class='balance'>Opening Balance: {{ statement.opening_balance }}</strong>
+                    </div> -->
+                   
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="7" style="color: red;">Opening Balance: {{ statement.opening_balance }}</th>
+                            </tr>
+                            <tr>
+                                <th style='background:rgb(167, 165, 165);text-align:center;'>Date</th>
+                                <th style='background:rgb(167, 165, 165);text-align:center;'>Type</th>
+                                <th style='background:rgb(167, 165, 165);text-align:center;'>Credit Amount</th>
+                                <th style='background:rgb(167, 165, 165);text-align:center;'>Voucher No</th>
+                                <th style='background:rgb(167, 165, 165);text-align:center;'>Debit Amount</th>
+                                <th style='background:rgb(167, 165, 165);text-align:center;'>Balance</th>
+                                <th style='background:rgb(167, 165, 165);text-align:center;'>Remarks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for txn in transactions %}
+                            <tr>
+                                <td style="text-align: center;">{{ txn.date|date:'d/m/Y' }}</td>
+                                <td style="text-align: center;">{{ txn.receipt_type }}</td>
+                                <td style="text-align: center;">{{ txn.total_amt|default:'-' }}</td>
+                                <td style="text-align: center;">{{ txn.voucher_no|default:'-' }}</td>
+                                <td style="text-align: center;">{{ txn.amount|default:'-' }}</td>
+                                <td style="text-align: center;">{{ txn.balance }}</td>
+                                <td style="text-align: center;">{{ txn.remarks|default:'None' }}</td>
+                            </tr>
+                            {% endfor %}
+                            <tr>
+                                <th colspan="7" style="color: red;">Closing Balance: {{ statement.closing_balance }}</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                   
+                    <!-- <div>
+                        <strong class='balance'>Closing Balance: {{ statement.closing_balance }}</strong>
+                    </div> -->
+                   
+                </tr>
+            </tbody>
+        </table>
+        <br>
+         <table class="denomination-table1">
+            <thead>
+                <tr>
+                    <th style='background:rgb(167, 165, 165);'>DENOMINATIONS</th>
+                    <th style='background:rgb(167, 165, 165);'>COUNT</th>
+                    <th style='background:rgb(167, 165, 165);'>TOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for denomination in denominations %}
+                <tr>
+                    <td>{{ denomination.value }} X</td>
+                    <td>{{ denomination.count }}</td>
+                    <td>{{ denomination.total }}</td>
+                </tr>
+                {% endfor %}
+                <tr style="background-color: #f2f2f2; font-weight: bold;">
+                    <td colspan="2" style='background:rgb(167, 165, 165);'>Total Cash In Hand (₹)</td>
+                    <td style='background:rgb(167, 165, 165);'>{{ total_cash_in_hand }}</td>
+                </tr>
+            </tbody>
+        </table> 
+               
+        <table class='table3'>
+            <tbody>
+                <tr>
+                    <th style='height:20px;'></th>
+                   <td></td>
+                   <th></th>
+               </tr>
+                <tr>
+                    <th>{{ user_name }}</th>
+                    <td style='width: 200px;'></td>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>PREPARD BY</th>
+                    <th></th>
+                    <th>APPROVED BY</th>
+                </tr>
+
+                <tr>
+                   <th>{{ statement.date|date:'d/m/Y' }}</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+
+            </tbody>
+        </table>
+   </div>
+    </body>
+</html>
+
+
+<!-- <h3 style="text-align: center; margin-top: 20px;">Denomination Details</h3> -->

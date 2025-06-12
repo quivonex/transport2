@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <title>Invoice Bill</title>
+
+    <style>
+
+        table{width: 100%;height: 100%;
+         border-collapse: collapse;border: 1px solid black;}
+         th,td{
+            border:1px solid black; padding:4px;font-size: 9px;
+        }
+        .table1
+        {
+            th,td{
+           
+                text-align: left;
+            }
+        }
+        .table2
+        {
+            th{
+                border: none;
+            }
+        }
+        .table
+        {
+            width: 23%;
+            position: absolute;
+            left: 590px;
+            top: 70px;
+        }
+        .table3
+        {
+            border: none;
+            th,td
+            {
+                padding: 1px;
+                font-size: 11px;
+                text-align: left;
+                border: none;
+                color: brown;
+            }
+        }
+        .table4
+        {
+            border: none;
+            th,td
+            {
+                padding: 2px;
+                font-size: 12px;
+                text-align: left;
+                border: none;
+                color: brown;
+            }
+            td
+            {
+                font-size: 13;
+            }
+        }
+        .table5
+        {
+            th{
+                text-align: center;
+            }
+        }
+        .t-last{
+            border: none;
+            td,th{
+                border: none;
+                text-align: left;
+            }
+        }
+        .main-heading
+        {
+            font-family:'Times New Roman';
+            color: red;
+            font-weight: bold;
+            text-transform: uppercase;    
+            font-size: 35px;
+            position:relative;
+            bottom:90px;
+            text-align:center;
+        }
+        .heading
+        {
+            position:relative;
+            text-align: center;
+            bottom:130px;
+        }
+        .header {
+           text-align: center;
+         }
+         .header img {
+           width: 170px;
+           height:150px;
+           float: left;
+           right: 30px;
+           position: relative;
+           bottom:100px;
+         }
+          .info
+          {
+           position: relative;
+           right:70px;
+           bottom:120px;
+          }
+
+       .barcode {
+        position: relative;
+        right: -560px;
+        width: 200px;
+        height: 50px;
+        top:155px;
+      }
+      h4{
+        position: relative;
+        bottom: 20px;
+        left: 60px;
+      }
+       img {
+        width: 100%;
+        height: 45px;
+        align-items: center;
+      }
+      .barcode h3 {
+        display: none;
+      }
+      .address{
+        font-size:14px;
+        white-space: normal;
+        word-wrap: break-word;
+        width:620px;
+        position: relative;
+        left: 50px;
+      }
+      .main-t{
+        position: relative;
+        bottom: 135px;
+      }
+       
+     </style>
+
+    </head>
+
+    <body>
+
+         <div class='barcode'>
+           <!-- <img
+              src='data:image/png;base64,{{ barcode_base64 }}'
+              alt='Trip Memo No Barcode'
+            />-->
+        </div>
+          <h3 class='main-heading'>{{ company.company_name }}</h3>
+          <div class='header'>
+            <img src='{{ MEDIA_URL }}{{ company.company_logo }}' alt='Company Logo' />
+
+            <div class='info'>
+                <p class='address'>{{ company.address }}</p>
+                <p style='position:relative;bottom:10px;right:25px;font-size:13px;'>
+                    EMAIL: <b style='font-weight:normal;font-size:14px;'>{{ company.email_id }}&nbsp;&nbsp;MOB:{{ company.contact_number }}</b>
+                </p>
+                <p style='position:relative;bottom:15px;font-size:13px;right:25px;'>
+                    GST NO: {{ company.GST_number }}&nbsp;&nbsp;PAN NO: {{ company.pan_no }}
+                </p>
+            </div>
+
+          </div>
+         
+        <div class='main-t'>
+
+            <table>
+                <h3 style='text-align:center;text-decoration:underline;color:red; font-family:serif'>INVOICE BILL</h3>
+                <tbody>
+                    <tr>
+                        <td style="width: 45%;">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th style="border:none;">BILLING CUSTOMER NAME:</th>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: none;">{{ statement.billing_party }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th style="border:none;">ADDRESS:</th>
+                                    </tr>
+                                    <tr>
+                                        <td style="border:none;height:40px;">{{ statement.billing_party.address }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th style="border:none;">GST NO: <b style="font-weight: normal;">{{ statement.billing_party.gst_no }}</b></th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td style="width: 33%;">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th colspan="2">
+                                            <img
+                                              src='data:image/png;base64,{{ barcode_base64 }}'
+                                              alt='Trip Memo No Barcode'
+                                              /><br>
+                                              <b style="position:relative;left:80px;">
+                                       
+                                               {{ statement.bill_no }}
+                                                 
+                                              </b>
+                                        </th>
+                                    </tr>
+                                    <!-- {%  for bill  in  bookings %}
+                                    <tr>
+                                        <th style="text-align: center;">VEHICLE NO</th>
+                                        <td style="text-align: center;">{{ bill.coll_vehicle }}</td>
+                                    </tr>
+                                    {% endfor %} -->
+                                    <!-- <tr>
+                                        <th>PAYMENT DUE DATE</th>
+                                        <td>{{ statement.branch_name }}</td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr style="height:40px;">
+                                        <th>INVOICE NO</th>
+                                        <th>{{ statement.bill_no }}</th>
+                                    </tr>
+                                 
+                                    <tr>
+                                        <th>DATE</th>
+                                        <td>{{ statement.date|date:'d/m/Y' }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>CREDIT DAYS</th>
+                                        <td>{{ statement.billing_party.credit_period }}</td>
+                                    </tr>
+                                   <tr>
+                                        <th>BRANCH</th>
+                                        <td>{{ statement.branch_name }}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th style='width:20px;background:rgb(226, 223, 223);text-align: center;'>GC NO</th>
+                        <th style='width:20px;background:rgb(226, 223, 223);text-align: center;'>FROM</th>
+                        <th style='width:20px;background:rgb(226, 223, 223);text-align: center;'>CONSIGNOR</th>
+                        <th style='width:20px;background:rgb(226, 223, 223);text-align: center;'>ART</th>
+                        <th rowspan="2" style='width:20px;background:rgb(226, 223, 223);text-align: center;'>VEHICLE NO</th>
+                        <th rowspan="2" style='width:20px;background:rgb(226, 223, 223);text-align: center;'>PARTY BILL REF. NO.</th>
+                        <th style='width:20px;background:rgb(226, 223, 223);text-align: center;'>FRT.</th>
+                        <th style='width:20px;background:rgb(226, 223, 223);text-align: center;'>COLL.</th>
+                        <th style='width:20px;background:rgb(226, 223, 223);text-align: center;'>STAT.CH</th>
+                        <!-- <th style='width:30px;background:rgb(226, 223, 223);'>GD COL</th> -->
+                        <!-- <th style='width:30px;background:rgb(226, 223, 223);'>FOV</th> -->
+                        <!-- <th style='width:30px;background:rgb(226, 223, 223);'>UNION</th> -->
+<!--                         <th style='width:30px;background:rgb(226, 223, 223);text-align: center;'>ODACOLL</th> -->
+                       <th style='width:20px;background:rgb(226, 223, 223);text-align: center;'>LOADING CHRG</th>
+                       <th rowspan="2" style='width:20px;background:rgb(226, 223, 223);text-align: center;'>DETENTION CHRG</th>
+                      <th rowspan="2" style='width:20px;background:rgb(226, 223, 223);text-align: center;'>UNION CHRG</th>
+                        <th rowspan="2" style='width:20px;background:rgb(226, 223, 223);text-align: center;'>GRAND TOTAL</th>
+                    </tr>
+                    <tr>
+                        <th style='width:20px;background:rgb(226, 223, 223);text-align: center;'>DATE</th>
+                        <th style='width:20px;background:rgb(226, 223, 223);text-align: center;'>TO</th>
+                        <th style='width:20px;background:rgb(226, 223, 223);text-align: center;'>CONSIGNEE</th>
+                        <th style='width:20px;background:rgb(226, 223, 223);text-align: center;'>WT(KG)</th>
+                        <th style='width:20px;background:rgb(226, 223, 223);text-align: center;'>EWAY CH.</th>
+                        <th style='width:20px;background:rgb(226, 223, 223);text-align: center;'>DELL.</th>
+                        <th style='width:20px;background:rgb(226, 223, 223);text-align: center;'>HAMALI</th>
+                        <!-- <th style='width:30px;background:rgb(226, 223, 223);'>GD DELL</th> -->
+                        <!-- <th style='width:30px;background:rgb(226, 223, 223);'>COD</th> -->
+                        <!-- <th style='width:30px;background:rgb(226, 223, 223);'>ODA DELL.</th> -->
+<!--                         <th style='width:30px;background:rgb(226, 223, 223);text-align: center;'>OTHER</th> -->
+                         <th style='width:20px;background:rgb(226, 223, 223);text-align: center;'>UNLOADNING CHRG</th>
+                    </tr>
+                    {%  for bill  in  bookings %}
+                    <tr>
+                        <td style="text-align: center;">{{ bill.lr_number }}</td>
+                        <td>{{ bill.from_branch }}</td>
+                        <td>{{ bill.consignor }}</td>
+                        <td style="text-align: center;"> {{ bill.okpackage|floatformat:0 }} </td>
+                        <td rowspan="2" style="text-align: center;">{{ bill.coll_vehicle }}</td>
+                         <td rowspan="2" style="text-align: left;">
+                            <ul>
+                                {% for description in bill.descriptions.all %}
+                                    <li style="position: relative;right: 20px;">{{ description.challan_no }}</li>
+                                {% empty %}
+                                    <li style="position: relative;right: 20px;">No descriptions</li>
+                                {% endfor %}
+                            </ul>
+                        </td>
+                        <td style="text-align: center;">{{ bill.freight }}</td>
+                        <td style="text-align: center;">{{bill.collection|default:"0"}}</td>
+                        <td style="text-align: center;">{{ bill.bilty_charges|default:"0" }}</td>
+                        <!-- <th></th>
+                        <th></th>
+                        <td>{{ bill.other_charge_2_val|default:"0" }}</td> -->
+<!--                         <td style="text-align: center;">{{ bill.other_charge_1_val|default:"0" }}</td> -->
+                       <td style="text-align: center;">{{ bill.loadinghamali|default:"0" }}</td>
+                       <td rowspan="3" style="text-align: center;">{{  bill.detention_charges|default:"0" }}</td>
+                      <td rowspan="3" style="text-align: center;">{{  bill.toll_escort_total|default:"0" }}</td>
+                        <td rowspan="3" style="text-align: center;">{{ bill.grand_total }}</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">{{ bill.date|date:'d/m/Y' }}</td>
+                        <td>{{ bill.to_branch }}</td>
+                        <td>{{ bill.consignee }}</td>
+                        <td style="text-align: center;">{{ bill.tchargedwt|floatformat:0 }}</td>
+<!--                         <td style="text-align: center;">{{ bill.detention_charges|default:"0" }}</td> -->
+                        <td style="text-align: center;">{{ bill.e_way_bill_charges|default:"0" }}</td>
+                        <td style="text-align: center;">{{bill.door_delivery|default:"0" }}</td>
+                        <td style="text-align: center;">{{ bill.hamali|default:"0" }}</td>
+                        <!-- <td>{{bill.hamali|default:"0" }}</td>
+                        <th></th>
+                        <th></th> -->
+                        <td style="text-align: center;">{{ bill.unloadinghamali|default:"0" }}</td>
+                    </tr>
+                    <tr>
+<!--                         <th>LOADING CHRG</th>
+                        <td style="text-align: center;">{{ bill.loadinghamali|default:"0" }}</td>
+                        <th>UNLOADING CHRG</th>
+                        <td style="text-align: center;">{{ bill.unloadinghamali|default:"0" }}</td> -->
+<!--                         <th>GODOWN CHRG</th>
+                        <td style="text-align: center;">{{ bill.godown_charges|default:"0" }}</td> -->
+<!--                         <th>DETENTION</th>
+                        <td style="text-align: center;">{{ bill.detention_charges|default:"0" }}</td> -->
+<!--                         <th>INSURANCE CHRG</th>
+                        <td style="text-align: center;">{{ bill.insurance_charges|default:"0" }}</td> -->
+                       <!-- <th>GRAND TOTAL</th>
+                       <th>{{ lr.grand_total }}</th> -->
+                    </tr>
+                   
+                    {% endfor %}
+                </tbody>
+            </table>
+           
+         <table>
+            <tbody>
+               
+                <tr>
+                    <th style='text-align:center;width:25%;'>TOTAL</th>
+                    <th colspan="3" style="text-align: right;">{{ statement.totla_amt }}</th>
+                </tr>
+                <tr>
+                    <th style='text-align:center;'>AMOUNT IN WORDS</th>
+                    <th colspan="3" style="text-align: center;">{{bill_total_words}} Rs Only</th>
+                </tr>
+                <tr>
+                    <td><b>ACCOUNT HOLDER NAME</b></td>
+                    <td>J K ROADWAYS</td>
+                    <td><b>ACCOUNT NO:</b>50200032013660</td>
+                    <td><b>IFSC CODE</b>: HDFC0002872</td>
+                </tr>
+                <tr>
+                    <td><b>BANK NAME: </b> HDFC</td>
+                    <td><b>BANK BRANCH: </b>SHIKRAPUR</td>
+
+                    <td><b>ACCOUNT TYPE</b></td>
+                    <td>CURRENT</td>
+                </tr>
+                <tr>
+                    <th colspan="4" style="text-align: center;">"This is computer generated documents which does not require signature"</th>
+                </tr>
+               
+            </tbody>
+
+         <table class="t-last">
+            <tbody>
+                <tr>
+                    <th>Receiver's Sign & Stamp</th>
+                    <th>Terms & conditions:</th>
+                    <th>For {{ company.company_name }}</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>All Disputes subject to Pune Jurisdiction.</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>PAN NO: AAOFJ2862R</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>GTA-RCM APPLICABLE / SAC NO : 996511</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>Receipt Date</th>
+                    <th>DESCRIPTION OF SAC : ROAD TRANSPORT SERVICE OF GOODS</th>
+                    <th>Authorised Signature</th>
+                </tr>
+            </tbody>
+         </table>
+
+         <!-- <table class='table2'>
+            <tbody>
+                <tr>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th style='text-align:center'>{{ user_name }}</th>
+                </tr>
+                <tr>
+                    <th style='text-align:right;width:20%'>CHECKED BY</th>
+                    <th style='width:48%;'></th>
+                    <th style='text-align:center;'>{{ company.company_name }}</th>
+                </tr>
+            </tbody>
+         </table> -->
+         </div>
+
+    </body>
+</html>

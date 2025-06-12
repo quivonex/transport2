@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <title>Invoice</title>
+    <style>
+         table{
+            width:100%;height: 100%;
+            border-collapse: collapse;
+            }
+            th,td{border:1px solid black; padding:3px 5px;font-size: 13.50px;
+            }
+            .table1
+            {
+                th,td{
+                   
+                    border: none;
+                }
+                td{
+                    height: 50px;
+                }
+            }
+            .sub-table2
+            {
+                th,td{
+                    border: none;
+                }
+            }
+           
+            .name-css{
+                width: 110px;
+            }
+            .capital{
+                font-size: 12px;
+            }
+            .capitals{
+                font-size: 14px;
+            }
+            .capital-b{
+                font-size: 11.79px;
+            }
+            .main-heading
+            {
+               font-family:'Times New Roman';
+               color: red;
+               font-weight: bold;
+               text-transform: uppercase;    
+               font-size: 35px;
+               position:relative;
+               bottom:50px;
+               text-align:center;
+            }
+            .heading{
+                position:relative;
+                text-align: center;
+                bottom:110px;
+                font-size:19px;
+            }
+            .header {
+               text-align: center;
+             }
+             .header img {
+               width: 200px;
+               height:180px;
+               float: left;
+               right: 180px;
+               position: relative;
+               bottom:120px;
+             }
+              .info
+              {
+               position: relative;
+               right:70px;
+               bottom:90px;
+              }
+   
+          .barcode {
+            position: relative;
+            /*left: 900px;*/
+            width: 200px;
+            height: 50px;
+           /* bottom: -150px;*/
+          }
+          h4{
+            position: relative;
+            bottom: 20px;
+            left: 60px;
+          }
+          .barcode img {
+            width: 100%;
+            height: 40px;
+          }
+          .barcode h3 {
+            display: none;
+          }
+          .address{
+            font-size:14px;
+            white-space: normal;
+            word-wrap: break-word;
+            width:850px;
+            position: relative;
+            right: 80px;  
+          }
+          .main-t{
+            position: relative;
+            bottom: 120px;
+            right:305px;
+            width:180%;
+          }
+       
+ .table-container{
+ transform: scale(0.54);
+ align-content: center;
+ position:relative;
+ bottom: 420px;
+/*  margin-bottom: -150px; */
+ }
+       
+
+        @page {
+                size: 210mm 297mm;
+                margin: 2mm;
+                margin-bottom: -780px;
+                }
+                 .page-break {
+                    page-break-after: always;
+                }
+                .invoice-container {
+                    height: 50%;                        
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-bottom: -100px;
+                }
+      .cell-content{
+        display:block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 640px;
+      }
+      .cell-content1{
+       
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 130px;
+      }
+       
+    </style>
+     </head>  
+
+    <body>
+        <div class='table-container'>
+        {% for copy, heading in copies_with_headings %}
+        {% if forloop.counter0|divisibleby:2 %}
+           <div class='page-break'>
+        {% endif %}
+       
+        <div class='invoice-container'>
+            <h5 style='position:relative;left:1000px;bottom:-130px;visibility:hidden;'>{{ heading }}</h5>
+
+        <h3 class='main-heading'>{{ company.company_name }}</h3>
+          <div class='header'>
+            <img src='{{ MEDIA_URL }}{{ company.company_logo }}' alt='Company Logo' />
+
+            <div class='info'>
+                <p class='address'>{{ company.address }}</p>
+                <p style='position:relative;bottom:10px;right:25px;font-size:14px;'>
+                    EMAIL: <b style='font-weight:normal;font-size:16px;'>{{ company.email_id }}&nbsp;&nbsp;MOB:{{ company.contact_number }}</b>
+                </p>
+                <p style='position:relative;bottom:15px;font-size:14.50px;right:25px;'>
+                    GST NO: {{ company.GST_number }}&nbsp;&nbsp;PAN NO: {{ company.pan_no }}
+                </p>
+                </div>
+
+          </div>
+          <h3 class='heading'>GOODS CONSIGNMENT NOTE</h3>
+         
+            <div class='main-t'>
+                <table>
+                    <tbody>
+                        <tr>
+                               <td>
+                                <table>
+                                    <tbody>
+                                       
+                                   
+                                        <tr>
+                                            <td colspan="2">
+                                                <table>
+                                                    <tr>
+                                            <th rowspan="5" colspan="2">CONSIGNOR</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="8" class="cell-content"> NAME: {{ lr.consignor }}</td>
+                                        </tr>    
+                                        <tr>
+                                            <td colspan="8" class="cell-content">ADDRESS: {{ lr.consignor.address }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="8" class="cell-content">GST NO: {{ lr.consignor.gst_no }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="8" class="cell-content"> CONTACT NO: {{ lr.consignor.contact_no }}&nbsp;&nbsp;&nbsp;&nbsp;  </td>
+                                        </tr>
+                                        <tr>
+                                            <th rowspan="5" colspan="2">CONSIGNEE</th>
+                                           
+                                        </tr>
+                                        <tr>
+                                            <td colspan="8" class="cell-content">NAME: {{ lr.consignee }}</td>
+                                        </tr>  
+                                        <tr>
+                                            <td colspan="8" class="cell-content">ADDRESS: {{ lr.consignee.address }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="8" class="cell-content">GST NO: {{ lr.consignee.gst_no }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="8" class="cell-content"> CONTACT NO: {{ lr.consignee.contact_no }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                        </tr>
+                                                   
+                                </table>
+                                </td>
+
+                          </tr>
+                          <tr>
+                            <td style="height:320px;">
+                                <table style="margin-top:-100px;">
+                                    <tr>
+                                        <th style='width:90px;'>MATERIAL DES</th>
+                                        <th>SUB DESC</th>
+                                        <th>QTY</th>
+                                        <th>AC WT</th>
+                                        <th style='width:60px;'>CHRG WT</th>
+                                        <th style='width:40px;'>RATE</th>
+                                        <th>UNIT TYPE</th>
+                                        <th>CHALLAN NO</th>
+                                        <th>INVOICE VALUE</th>
+                                        <th style='min-width:80px;'>E-WAY BILL NO</th>
+                                    </tr>
+
+                                </tr>
+                                {% for desc in descriptions %}
+                                <tr>
+                                    <td>{{ desc.description }}</td>
+                                    <td>{{ desc.sub_description }}</td>
+                                    <td>{{ desc.quantity }}</td>
+                                    <td>{{ desc.actual_weight|floatformat:0 }}</td>
+                                    <td>{{ desc.charged_weight|floatformat:0 }}</td>
+                                    <td>{{ desc.rate }}</td>
+                                    <td>{{ desc.unit_type.type_name }}</td>
+                                    <td class="cell-content1">{{ desc.challan_no }}</td>
+                                    <td>{{ desc.inv_value }}</td>
+                                    <td>{{ desc.e_way_bill_no }}</td>
+                                </tr>
+                                {% endfor %}
+                                <tr>
+                                   <th>TOTAL</th>
+                                   <th></th>  
+                                   <th>{{lr.tpackage|floatformat:0}}</th>
+                                   <th></th>  
+                                   <th>{{lr.tchargedwt|floatformat:0}}</th>
+                                   <th></th>
+                                   <th></th>
+                                   <th></th>
+                                   <th></th>
+                                   <th></th>    
+                               </tr>
+                             
+                                <tr>
+                                     <th colspan="10">REMARK: <b style="font-weight:normal;">{{lr.remark}}<b></th>
+                                </tr>    
+                                </table>
+                            </td>
+                          </tr>    
+
+
+                                           
+                                         
+                                         <tr  style='height:50px;border:none;'>
+                                               <th style='border:none;'></th>
+                                          </tr>    
+           
+                                        <tr style='border:none;'>
+                                            <th colspan="10" style='text-align:center;border:none;position:relative;top:50px;'>RECEIVER'S SIGNATURE WITH STAMP</th>
+                                        </tr>
+               
+                                    </tbody>
+                                </table>
+                            </td>
+                           
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                           <div class='barcode'>
+                                                    <img
+                                                    src='data:image/png;base64,{{ barcode_base64 }}'
+                                                     alt='LR No Barcode' style='width:230px;height: 40px;'
+                                                        />
+                                              </div>
+                                        </tr>
+                                        <tr>
+                                            <th>GC NO</th>
+                                            <th>{{ lr.lr_number }}</th>
+                                        </tr>
+                                        <tr>
+                                            <th>DATE</th>
+                                            <td>{{ lr.date|date:'d/m/Y' }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>FROM BRANCH</th>
+                                            <td>{{ lr.from_branch }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>TO BRANCH</th>
+                                            <td>{{ lr.to_branch }}</td>
+                                        </tr>
+                                   
+                                       <tr>
+                                            <th>VEHICLE NO.</th>
+                                            <td>{{ lr.coll_vehicle.vehical_number }}</td>
+                                        </tr>        
+                                        <tr>
+                                            <th>VEHICLE TYPE</th>
+                                            <td>{{ lr.coll_vehicle.vehical_type.type_name }}</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th colspan='2' style='text-align:center;background:skyblue;text-align:center;'> AT OWNER'S RISK</th>
+                                           </tr>
+                                            <tr>
+                                                <th colspan='2' style='text-align:center;'>SUBJECT TO PUNE JURISDICTION ONLY</th>  
+                                            </tr>
+                                            <tr>
+                                                <th colspan='2' style='color:red;text-align:center;'> GTA-RCM APPLICABLE</th>
+                                            </tr>
+                                            <tr>
+                                                <th colspan='2' style='text-align:center;'>SAC NO.: 996511</th>
+                                            </tr>
+                                            <tr>
+                                                <th colspan='2' style='text-align:center;'>DESCRIPTION OF SAC : ROAD TRANSPORT SERVICE OF GOODS</th>
+                                            </tr>
+                                            <tr>
+                                                <th colspan='2' style='text-align:center;'>Transit Insurance Cover By Consignor Or Consignee Not Transport</th>
+                                            </tr>
+                                            <tr>
+                                                <th colspan='2' style='text-align:center;color:red;'>Company will not entertain any claim against transit damages of glass items,liquids and other fragile items</th>
+                                            </tr>
+                                            <tr>
+                                                <th colspan='2' style='color:white;font-size:15px;background:rgb(23, 60, 75);text-align:center;'>{{ heading }}</th>
+                                            </tr>  
+                                       
+                                    </tbody>
+                                </table>
+                            </td>
+                           
+                            <td>
+                                <table>
+                                    <tbody>  
+                                        <tr>
+                                            <th colspan='2'>ACCOUNT HOLDER</th>
+                                            <td colspan='2'>J K ROADWAYS</td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan='2'>ACCOUNT NUMBER</th>
+                                            <td colspan='2'>50200032013660</td>
+                                        </tr>  
+                                         <tr>
+                                             <th colspan='2'>IFSC</th>  
+                                             <td colspan='2'>HDFC0002872</td>
+                                         </tr>
+                                          <tr>
+                                        <th colspan='2'>BRANCH</th>  
+                                        <td colspan='2'>SHIKRAPUR</td>
+                                          </tr>
+                                          <tr>
+                                        <th colspan='2'>ACCOUNT TYPE</th>
+                                        <td colspan='2'>CURRENT</td>  
+                                          </tr>
+                                        <tr>
+                                                <th>FREIGHT</th>
+                                                <td>{{ lr.freight }}</td>
+
+                                                <td colspan="2" rowspan="8">
+                                                    <table>
+                                                        <tr>
+                                                            <th>COLL.AT</th>
+                                                            <td>{{ lr.coll_at }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>COLL.TYPE</th>
+                                                            <td>{{ lr.coll_type }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>LOAD TYPE</th>
+                                                            <td>{{ lr.load_type }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>PAY TYPE</th>
+                                                            <td>{{ lr.pay_type }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>DEL.AT</th>
+                                                            <td>{{ lr.del_at }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>BILLING PARTY</th>
+                                                            <td>{{ lr.billing_party }}</td>
+                                                        </tr>
+                                                       
+                                                    </table>
+                                                </td>
+                                               
+                                        </tr>
+                                           <tr>
+                                                     <th>COLL CHARG</th>
+                                                     <td>{{ lr.collection|default:"0" }}</td>
+                                                   
+                                                 </tr>
+                                               <tr>
+                                                     <th>DOOR DEL</th>
+                                                     <td>{{ lr.door_delivery|default:"0" }}</td>
+                                                     
+                                                 </tr>  
+                                            <tr>
+                                                <th>HAMALI</th>
+                                                <td>{{ lr.hamali|default:"0" }}</td>
+                                               
+                                            </tr>
+                                            <tr>
+                                                <th>LOADING CHRG</th>
+                                                <td>{{ lr.loadinghamali|default:"0" }}</td>
+                                               
+                                            </tr>
+                                            <tr>
+                                                <th>UNLOADING CHRG</th>
+                                                <td>{{ lr.unloadinghamali|default:"0" }}</td>
+                                               
+                                            </tr>
+                                            <tr>
+                                                <th>BILTY CHRG</th>
+                                                <td>{{ lr.bilty_charges|default:"0" }}</td>
+                                               
+                                            </tr>
+                                            <tr>
+                                                <th>GODOWN CHRG</th>
+                                                <td>{{ lr.godown_charges|default:"0" }}</td>
+                                               
+                                            </tr>
+                                           
+                                            <tr>
+                                                <th>DETENTION</th>
+                                                <td>{{ lr.detention_charges|default:"0" }}</td>
+                                               
+                                            </tr>
+                                            <tr>
+                                                <th>UNION CHRG</th>
+                                                <td>{{ lr.toll_escort_total|default:"0" }}</td>
+                                               
+                                            </tr>
+                                            <tr>
+                                                <th>OTHER CHRG1</th>
+                                                <td>{{ lr.other_charge_1_val|default:"0" }}</td>
+                                               
+                                            </tr>
+                                             <tr>
+                                                <th>OTHER CHRG2</th>
+                                                <td>{{ lr.other_charge_2_val|default:"0" }}</td>
+                                               
+                                            </tr>
+                                            <tr>
+                                                <th>INSURANCE CHRG</th>
+                                                <td>{{ lr.insurance_charges|default:"0" }}</td>
+                                                <th colspan="2" rowspan="3" style='text-align:center;border:none;'>
+                                                     <b style="position:relative;top:30px;">PREPAID BY<br>
+                                                    {{ lr.created_at|date:'d/m/Y h:i A' }}<br>
+                                                    {{ user_name }}</b>
+                                                </th>
+                                            </tr>  
+                                            <tr>
+                                                <th>E-WAY BILL CHRG</th>
+                                                <td>{{ lr.e_way_bill_charges|default:"0" }}</td>
+                                            </tr>  
+                                            <tr>
+                                                <th>GRAND TOTAL</th>
+                                                <th>{{ lr.grand_total }}</th>
+                                            </tr>
+   
+                                     </tbody>
+                                </table>
+                            </td>
+                           
+                        </tr>
+                    </tbody>
+                </table>                              
+            </div>
+            {% if forloop.counter0|divisibleby:2 and not forloop.last %}
+                </div>                          
+            {% endif %}
+        {% endfor %}  
+        </div>
+    </div>
+                                                       
+    </body>
+</html> 

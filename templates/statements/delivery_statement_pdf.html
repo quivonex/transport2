@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Delivery Statement</title>
+       
+        <style>
+            table{width:100%;height: 100%;
+                border: 1px solid black;border-collapse: collapse;}
+                th,td{border:1px solid black; padding:3px 5px;font-size: 13px;
+                }
+                .head-table
+                {
+                    
+                    th,td{
+                        border: none;
+                    }
+                }
+
+                .table2
+                {
+                    td,th{
+                        text-align: center;
+                    }
+                }
+                .table3
+                 {
+                    
+                    th,td{
+                        border:none;
+                        text-align: center;
+                        } 
+                 } 
+                 .main-heading
+                 {
+                    font-family:'Times New Roman';
+                    color: red;
+                    font-weight: bold;
+                    text-transform: uppercase;    
+                    font-size: 35px;
+                    position:relative;
+                    bottom:90px;
+                    text-align:center;
+                 }
+                .heading
+                {
+                    position:relative;
+                    text-align: center;
+                    bottom: 130px;
+                }
+                 .header {
+                    text-align: center;
+                  }
+                  .header img {
+                    width: 170px;
+                    height:150px;
+                    float: left;
+                    right: 30px;
+                    position: relative;
+                    bottom: 120px;
+                  }
+                  .info
+                  {
+                   position: relative;
+                   bottom:120px;
+                   right:70px;
+                  }
+        
+                  .barcode {
+                    position: relative;
+                    right: -560px;
+                    width: 200px;
+                    height: 50px;
+                    top:85px;
+                 }
+              .barcode img {
+                width: 100%;
+                height: 35px;
+              }
+               .barcode h3 {
+                 display: none;
+               }
+               .address{
+                font-size:13px;
+                white-space: normal; 
+                word-wrap: break-word;
+                width:620px;
+                position: relative;
+                left: 50px;
+              }
+              .main-t{
+                position: relative;
+                bottom: 125px;
+              }
+        </style>
+    </head>
+
+    <body>
+       
+        <div class='barcode'>
+           <!-- <table class='head-table'>
+            <tbody>
+                <tr>
+                    <td style='width:10px;'>Delivery No:</td>
+                    <td>{{ statement.delivery_no }}</td>
+                </tr>
+                <tr>
+                    <td>Branch Name:</td>
+                    <td>{{ statement.branch_name }}</td>
+                </tr>
+                <tr>
+                    <td>Date:</td>
+                    <td>{{ statement.date|date:'d/m/Y' }}</td>
+                </tr>
+            </tbody>
+           </table> -->
+          </div>
+          <h3 class='main-heading'>{{ company.company_name }}</h3>
+          <div class='header'>
+            <img src='{{ MEDIA_URL }}{{ company.company_logo }}' alt='Company Logo' />
+
+            <div class='info'>
+                <p class='address'>{{ company.address }}</p>
+                <p style='position:relative;bottom:10px;right:25px;font-size:13px;'>
+                    EMAIL: <b style='font-weight:normal;font-size:14px;'>{{ company.email_id }}&nbsp;&nbsp;MOB:{{ company.contact_number }}</b>
+                </p>
+            </div>
+
+          </div>
+
+         <h2 class='heading'>DELIVERY STATEMENT</h2>
+
+    <div class='main-t'>
+        <table class='head-table'>
+            <tbody>
+                <tr>
+                    <td style='width:250px;'></td>
+                    
+                    <td>
+                        <table class="table4">
+                            <tbody>
+                                <tr>
+                                    <th class='barcode'> <img
+                                        src='data:image/png;base64,{{ barcode_base64 }}'
+                                        alt='LCM No Barcode'
+                                      /><br>
+                                      <b style='text-align:center;font-size:18px;'>{{ delivery.memo_no }}</b>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td style='width:250px;'> </td>
+                    
+                </tr>
+            </tbody>
+        </table>
+        
+        <table class='head-table'>
+            <tbody>
+            
+                <tr>
+                    <th style='width:70px;'>DS No:</th>
+                    <th>{{ statement.delivery_no }}</th> 
+                    <th style='width:95px;'>Branch Name:</th>
+                    <td>{{ statement.branch_name}}</td>
+                    <th style='width:70px;'>Date:</th>
+                    <td>{{ statement.date|date:'d/m/Y' }}</td>
+                </tr>
+                
+            </tbody>
+        </table>    
+        <table class='table2'>
+            <tbody>
+                <tr>
+                    <th>GC No</th>
+                    <th>GC Date</th>
+                    <th>Schedule Date</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <!-- <th style='width:400px;'>Consignor</th> -->
+                    <!-- <th style='width:400px;'>Consignee</th> -->
+                    <th>Wt</th>
+                    <th>Qty</th>
+                    <th>CS </th>
+                    <th>MR </th>
+                    <th>Pay Type</th>
+                    <th>Amount</th>
+                </tr>
+                
+                {% for lr in bookings %}
+                <tr>
+                    <td>{{ lr.lr_booking.lr_number }}</td>
+                    <td>{{ lr.lr_booking.date|date:'d/m/Y' }}</td>
+                    <td>{{ lr.lr_booking.shedule_date|date:'d/m/Y' }}</td>
+                    <td>{{ lr.lr_booking.from_branch }}</td>
+                    <td>{{ lr.lr_booking.to_branch }}</td>
+                    <!-- <td>{{ lr.consignor }}</td> -->
+                    <!-- <td>{{ lr.consignee }}</td> -->
+                    <td>{{ lr.lr_booking.tchargedwt|floatformat:0 }}</td>
+                    <td>{{ lr.lr_booking.okpackage|floatformat:0 }}</td>
+                    <td>{{ lr.cs }}</td>
+                    <td>{{ lr.mr }}</td>
+                    <td>{{ lr.lr_booking.pay_type }}</td>
+                    <td>{{ lr.lr_booking.grand_total }}</td>
+                </tr>
+                {% endfor %}
+                
+
+        <table class='table3'>
+            <tbody>
+                <tr>
+                     <th style='height:20px;'></th>
+                    <td></td>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>{{ user_name }}</th>
+                    <td style='width: 200px;'></td>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>Prepare By</th>
+                    <th></th>
+                    <th>Checked By</th>
+                </tr>
+
+                <tr>
+                    <th>{{ statement.created_at|date:'d/m/Y h:i A' }}</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    </body>
+</html>
